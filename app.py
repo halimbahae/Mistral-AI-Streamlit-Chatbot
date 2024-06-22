@@ -7,7 +7,7 @@ import requests
 import json
 
 # Set up API keys
-MISTRAL_API_KEY = 'your_mistral_api_key'
+MISTRAL_API_KEY = os.getenv('MISTRAL_API_KEY')
 
 # Function to get embeddings from Mistral AI
 def get_embeddings(text):
